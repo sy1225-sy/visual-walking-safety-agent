@@ -27,10 +27,10 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print("사용 디바이스:", device)
 
 # 분석할 이미지 폴더
-PHOTO_DIR = r"/content/Photo"
+PHOTO_DIR = "/content/Photo"
 
 # TTS 저장 폴더
-TTS_DIR = r"C:\Users\lhwf4\Downloads\tts_outputs"
+TTS_DIR = "/content/tts_outputs"
 os.makedirs(TTS_DIR, exist_ok=True)
 
 SUPPORTED_IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".bmp", ".webp")
